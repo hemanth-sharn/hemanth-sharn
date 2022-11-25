@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>3D Image Gallery Animation</title>
+      <link rel="stylesheet" href="tempfile.css">
+   </head>
+   <body>
+      <div class="center">
+         <input type="radio" checked name="active" id="tab-1">
+         <input type="radio" name="active" id="tab-2">
+         <input type="radio" name="active" id="tab-3">
+         <input type="radio" name="active" id="tab-4">
+         <div class="sliders">
+            <label for="tab-1"><img src="rew/1sjcc.jpeg"></label>
+            <label for="tab-2"><img src="rew/cms.jpg"></label>
+            <label for="tab-3"><img src="rew/2ice.jpeg"></label>
+            <label for="tab-4"><img src="rew/IMG-20190923-WA0005.jpg"></label>
+         </div>
+         <div class="img-card">
+            <img src="rew/WhatsApp%20Image%202022-03-17%20at%202.30.22%20PM.jpeg">
+            <img src="rew/cms.jpg">
+            <img src="rew/1sjcc.jpg">
+            <img src="rew/cms.jpg">
+         </div>
+      </div>
+   </body>
+</html>
+
+<?php
+$host="localhost";
+$user="root";
+$pass="";
+$db="mini1";
+$con = new mysqli($host,$user,$pass,$db);
+if (!$con){
+    echo"there are some problem while connecting the database";
+}
+$name =$_POST['name'];
+$phone =$_POST['phone'];
+$email =$_POST['email'];
+$msg =$_POST['msg'];
+
+$qry = "INSERT INTO contact1('name','phone','email','msg') VALUES ('$name','$phone','$email','$msg')";
+$insert = mysqli_query($con,$sqry);
+if(!insert){
+    echo"there are some problem while inserting data";
+}
+else{
+    echo"Data inserted";
+}
+?>

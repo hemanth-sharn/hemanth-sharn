@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+   background: linear-gradient(180deg, rgba(255, 166, 50, 1) 20% , rgba(25, 9, 40, 1)199% );
+    background-size: 100% 100%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.container1{
+    width: 30%;
+    position: 20%
+    background: white;
+    box-shadow: 0 0 8px #000;
+    opacity: 0.6;
+    left: 150%;
+}
+.container1 form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+form h1{
+    padding: 10px 0;
+    
+}
+form .id{
+    position: relative;
+}
+.id i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    border: 1px solid #5c5c5c;
+    border-radius: 3px;
+    background: lavender;
+    padding: 0 15px;
+    padding-right: 45px;
+    font-size: 20px;
+}
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid #5c5c5c;
+    border-radius: 3px;
+    background: lavender;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 0;
+}
+form button{
+      margin-top: 5px;
+      border: none;
+      background: lavender;
+      color: #222;
+      padding: 10px 0;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 800;
+      cursor: pointer;
+      border-radius: 3px;
+}
+
+form input:focus,
+form textarea:focus{
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s ease;
+}
+form input:focus::placeholder,
+form textarea:focus::placeholder{
+    padding-left: 4px;
+    color: black;
+    transition: all 0.3s ease;
+}
+form input:focus + i{
+    color: black;
+    transition: all 0.3s ease;
+}
+.container{
+  position: relative;
+  width: 400px;
+  background: black;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 15%;
+  
+}
+.container .post{
+  display: none;
+}
+.container .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .edit:hover{
+  text-decoration: underline;
+}
+.container .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+}
+.container form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover{
+  background: #1b1b1b;
+}
+ul{
+    background-color: antiquewhite;
+    border-radius: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 9px 5px 0px #00000017;
+}
+li a{
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+li:hover a{
+    color: cornflowerblue;
+}
+nav{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    background-image:url(rew/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 0px #00000017;
+    transition: 0.5s ease transform;
+}
+.icon.close{
+    transform: translateY(-50%) rotate(360deg);
+    background-image: url(rew/cancel.png);
+}
+ul{
+    width: 0px;
+    overflow: hidden;
+    transform: translateX(100px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    padding: 20px;
+}
+nav.show ul{
+    width: 1000px;
+    transform: translate(0px);
+    opacity: 1;
+    pointer-events: all;
+}
+nav{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    li a{
+        padding: 5px 10px;
+    }
+    nav ul{
+        padding: 15px;
+    
+    }
+    nav.show ul{
+        width: 260px;
+    }
+    .icon{
+        width: 45px;
+        height: 45px;
+        right: -50px;
+    }
+    nav{
+        top: 10px;
+        right: 60px;
+    }
+}

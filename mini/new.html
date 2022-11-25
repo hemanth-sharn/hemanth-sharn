@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font.awesome.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-loader"></div>
+  <nav>
+        <ul>
+            <li><a href="mini.html">Home</a></li>
+            <li><a href="mini2.html">Achievements</a></li>
+            <li><a href="videogal.html">Video Gallery</a></li>
+            <li><a href="new.html">Committee</a></li>
+            <li><a href="http://localhost/first/jfoot.html">Blog</a></li>
+            <li><a href="http://localhost/first/regist.html">Registration</a></li>
+            <li><a href="http://localhost/first/jfoot.html">Feedback</a></li>
+            
+        </ul>
+        <div class="icon"></div>
+    </nav>
+<script>
+    const icon = document.querySelector(".icon");  
+    const nav = document.querySelector("nav");  
+    icon.addEventListener("click", () => {icon.classList.toggle("close");  
+    nav.classList.toggle("show");  
+        }); 
+ </script>
+    <style>
+    ul{
+    background-color: antiquewhite;
+    border-radius: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 9px 5px 0px #00000017;
+}
+li a{
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+li:hover a{
+    color: cornflowerblue;
+}
+nav{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    background-image:url(rew/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 0px #00000017;
+    transition: 0.5s ease transform;
+}
+.icon.close{
+    transform: translateY(-50%) rotate(360deg);
+    background-image: url(rew/cancel.png);
+}
+ul{
+    width: 0px;
+    overflow: hidden;
+    transform: translateX(100px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    padding: 20px;
+}
+nav.show ul{
+    width: 1000px;
+    transform: translate(0px);
+    opacity: 1;
+    pointer-events: all;
+}
+nav{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    li a{
+        padding: 5px 10px;
+    }
+    nav ul{
+        padding: 15px;
+    
+    }
+    nav.show ul{
+        width: 260px;
+    }
+    .icon{
+        width: 45px;
+        height: 45px;
+        right: -50px;
+    }
+    nav{
+        top: 10px;
+        right: 60px;
+    }
+}
+    
+    </style>
+ 
+
+ <section class="testimonials-section sec-padding" id="testimonials">
+     <div class="container">
+         <div class="row">
+             <div class="section-title">
+                 <h2 data-title="Co-ordinator and office members" data-aos="fade-up"></h2>
+             </div>
+         </div>
+         <div class="row">
+          <div class="testi-item" data-aos="zoom-in">
+            <div class="testi-author">
+                <div class="testi-author-name">
+                     <h3>ALAN GODFREY</h3>
+                     <span>Co-ordinator</span>
+                 </div>
+                 <div class="testi-author-img">
+                     <img src="p/gf.jpeg" alt=" Alan Godfrey"=>
+                 </div>
+             </div>
+             <p>MIMA is the official entertainment association of St. Joseph's College (Autonomous), Bengaluru.
+                Our students are known not just in the campus but in other colleges too. A talented and kind hearted pool of people make use of this association in creating social awareness on different realities and commercial themes through captivating Ice-breakers, Mad-Ads, Mock Rock and Mime. In the recent years MIMA has won several laurels and accolades keeping it as one of the best associations in SJC. 
+                Jesuit Education aims for holistic learning and greater knowing of the inner self. I believe MIMA is one association that brings the true potential of its students and helps them value themselves and the people around them. </p>
+             
+             </div>
+
+             
+               </div>
+      </div>
+ </section>
+
+
+    <section class="testimonials-section sec-padding" id="testimonials">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2 data-title="Office Members of 2021" data-aos="fade-up"></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                     <div class="testi-item" data-aos="zoom-in">
+                       <div class="testi-author">
+                           <div class="testi-author-name">
+                                <h1>Hemanth Sharn</h1>
+                                <span>President</span>
+                            </div>
+                            <div class="testi-author-img">
+                                <img src="p/hsvp.jpeg" alt="testi author img">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>Kiran</h1>
+                                    <span>Vice President</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/kk.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>Sandeep</h1>
+                                    <span>Treasurer</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/sp.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>lokesh</h1>
+                                    <span>Assistant Treasurer</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/lk.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>Akshitra</h1>
+                                    <span>General Secretary</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/gs2.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>Dhun</h1>
+                                    <span>Media</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/dhun.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>Shrisha</h1>
+                                    <span>Media</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/sri.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+    
+     
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>Christopher</h1>
+                                    <span>Documentation</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/cj.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+
+                        <div class="testi-item"  data-aos="zoom-in">
+                            <div class="testi-author">
+                                <div class="testi-author-name">
+                                    <h1>kiran</h1>
+                                    <span>editor</span>
+                                 </div>
+                                 <div class="testi-author-img">
+                                     <img src="p/kirae.jpeg" alt="testi author img">
+                                 </div>
+                             </div>
+                        </div>
+                         </div>
+                     </div>
+         
+         
+    
+    </section>
+       
+            
+
+<script src="js/aos.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>

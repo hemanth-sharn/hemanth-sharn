@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="mini2.css">
+        <title>Achievements</title>
+    </head>
+    <body>
+      <nav>
+        <ul>
+            <li><a href="mini.html">Home</a></li>
+            <li><a href="mini2.html">Achievements</a></li>
+            <li><a href="videogal.html">Video Gallery</a></li>
+            <li><a href="s.html">About US</a></li>
+            <li><a href="k.html">Feedback</a></li>
+            <li><a href="http://localhost/testsite1/regist.html">Registration</a></li>
+            
+        </ul>
+        <div class="icon"></div>
+    </nav>
+<script>
+    const icon = document.querySelector(".icon");  
+    const nav = document.querySelector("nav");  
+    icon.addEventListener("click", () => {icon.classList.toggle("close");  
+    nav.classList.toggle("show");  
+        }); 
+ </script>
+        <h3 class="heading">Achievements</h3>
+        <div class="swiper-container">  
+  <div class="swiper-wrapper">  
+   <div class="slider-item swiper-slide">  
+    <div class="slider-image-wrapper">  
+     <img class="slider-image" src="rew/sjccfirst.jpg">  
+     </div>  
+    <div class="slider-item-content">  
+     <h1>First Win of MIMA</h1>  
+     <p>This was the first win and secured first place in Ice breakers and Cosplay at St. Joseph's College of Commerce in 2018.</p>  
+    </div>  
+   </div>  
+   <div class="slider-item swiper-slide">  
+    <div class="slider-image-wrapper">  
+     <img class="slider-image" src="rew/cms.jpg">  
+     </div>  
+    <div class="slider-item-content">  
+     <h1> First win in Mad ads</h1>  
+     <p>Mima secured first place in Mad ads event at Jain university in 2018</p>  
+    </div>  
+   </div>  
+   <div class="slider-item swiper-slide">  
+    <div class="slider-image-wrapper">  
+     <img class="slider-image" src="rew/mcc.jpg">  
+     </div>  
+    <div class="slider-item-content">  
+     <h1> First place in Mime</h1>  
+     <p>Mima secured first place in Mime event at Mount Carmel College in 2021</p>  
+    </div>  
+   </div>  
+   <div class="slider-item swiper-slide">  
+    <div class="slider-image-wrapper">  
+     <img class="slider-image" src="rew/madads.jpg">  
+     </div>  
+    <div class="slider-item-content">  
+     <h1>Walking On a Dream</h1>  
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>  
+    </div>  
+   </div>  
+  </div>  
+  <div class="slider-buttons">  
+    <button class="swiper-button-prev">Prev</button>  
+    <button class="swiper-button-next">Next</button>  
+  </div>  
+  <div class="swiper-pagination"></div>  
+ </div> 
+<script>
+    var swiper = new Swiper('.swiper-container', {  
+  slidesPerView: 1,  
+  spaceBetween: 20,  
+  effect: 'fade',  
+  loop: true,  
+  speed: 300,  
+  mousewheel: {  
+   invert: false,  
+  },  
+  pagination: {  
+   el: '.swiper-pagination',  
+   clickable: true,  
+   dynamicBullets: true  
+  },   
+  navigation: {  
+   nextEl: '.swiper-button-next',  
+   prevEl: '.swiper-button-prev',  
+  }  
+ });  
+</script>
+
+</body>
+</html>

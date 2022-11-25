@@ -1,0 +1,506 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: serif;
+    
+}
+body{
+   background: linear-gradient(180deg, rgba(0,0,0,0) 20% , rgba(25, 9, 40, 1) );
+    background-size: 100% 100%;
+    animation: gradient 15s ease infinite;
+    height: 245vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+ul{
+    background-color: silver;
+    border-radius: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 9px 5px 0px #00000017;
+}
+li a{
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+li:hover a{
+    color: cornflowerblue;
+}
+nav{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    background-image:url(rew/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 0px #00000017;
+    transition: 0.5s ease transform;
+}
+.icon.close{
+    transform: translateY(-50%) rotate(360deg);
+    background-image: url(rew/cancel.png);
+}
+ul{
+    width: 0px;
+    overflow: hidden;
+    transform: translateX(100px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    padding: 20px;
+}
+nav.show ul{
+    width: 1000px;
+    transform: translate(0px);
+    opacity: 1;
+    pointer-events: all;
+}
+nav{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    li a{
+        padding: 5px 10px;
+    }
+    nav ul{
+        padding: 15px;
+    
+    }
+    nav.show ul{
+        width: 260px;
+    }
+    .icon{
+        width: 45px;
+        height: 45px;
+        right: -50px;
+    }
+    nav{
+        top: 10px;
+        right: 60px;
+    }
+}
+.box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  165%;
+    right: 56.3%;
+    
+}
+.box .front, .box .back{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: lightblue;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200),0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+    
+}
+.box .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+    
+}
+.box .back p{
+    margin: 10px 20px;
+    text-align: center;
+    
+}
+.box .front img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    
+}
+.box:hover .front{
+    
+    transform: perspective(800px) rotateX(0deg);
+}
+.box:hover .back{
+    
+    transform: perspective(800px) rotateX(0);
+}
+
+
+.box1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  165%;
+    right: 25%;
+    
+}
+.box1 .front1, .box1 .back1{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: lightblue;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200),0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+    
+}
+.box1 .back1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+    
+}
+.box1 .back1 p{
+    margin: 10px 20px;
+    text-align: center;
+    
+}
+.box1 .front1 img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    
+}
+.box1:hover .front1{
+    
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box1:hover .back1{
+    
+    transform: perspective(800px) rotateX(0);
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  165%;
+    left: 5%;
+    
+}
+.box2 .front2, .box2 .back2{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: lightblue;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200),0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+    
+}
+.box2 .back2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+    
+}
+.box2 .back2 p{
+    margin: 10px 20px;
+    text-align: center;
+    
+}
+.box2 .front2 img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    
+}
+.box2:hover .front2{
+    
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box2:hover .back2{
+    
+    transform: perspective(800px) rotateX(0);
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  115%;
+    left: 5%;
+    
+}
+.box3 .front3, .box3 .back3{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: lightblue;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200),0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+    
+}
+.box3 .back3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+    
+}
+.box3 .back3 p{
+    margin: 10px 20px;
+    text-align: center;
+    
+}
+.box3 .front3 img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    
+}
+.box3:hover .front3{
+    
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box3:hover .back3{
+    
+    transform: perspective(800px) rotateX(0);
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  115%;
+    right: 25%;
+    
+    
+}
+.box4 .front4, .box4 .back4{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: lightblue;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200),0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+    
+}
+.box4 .back4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+    
+}
+.box4 .back4 p{
+    margin: 10px 20px;
+    text-align: center;
+    
+}
+.box4 .front4 img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    
+}
+.box4:hover .front4{
+    
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box4:hover .back4{
+    
+    transform: perspective(800px) rotateX(0);
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  115%;
+    right: 56.3%;
+    
+}
+.box5 .front5, .box5 .back5{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: lightblue;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200),0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+    
+}
+.box5 .back5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+    
+}
+.box5 .back5 p{
+    margin: 10px 20px;
+    text-align: center;
+    
+}
+.box5 .front5 img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    
+}
+.box5:hover .front5{
+    
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box5:hover .back5{
+    
+    transform: perspective(800px) rotateX(0);
+}
+
+
+.logo img{
+    
+    width: 63%;
+    height: 25%;
+    top: 48%;
+    left: 18%;
+    border-radius: 2% 2% 2% 2%;
+    position: absolute;
+    
+}
+.logo1 img{
+    
+    width: 100%;
+    height: 35%;
+    top: 15%;
+    left: 0%;
+    border-radius: 2% 2% 2% 2%;
+    position: absolute;
+    
+}
+.content{
+    position: absolute;
+    top: 73%;
+    left:0%;
+    font-size: 120%;
+    text-align: center;
+}
+footer{
+    position: absolute;
+    top:  205%;
+    left: 0;
+    right: 0;
+    
+    height: 0%;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin:  10px 0 10px 0;
+}
+.socials a{
+    text-decoration: none;
+    color: hotpink;
+    width: 50px;
+}
+.socials a i{
+    font-size: 0.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+
+
+

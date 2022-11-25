@@ -1,0 +1,88 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="regist.css"> 
+<title>MIMA</title>
+</head>  
+<body> 
+<nav>
+        <ul>
+            <li><a href="mini.html">Home</a></li>
+            <li><a href="mini2.html">Achievements</a></li>
+            <li><a href="videogal.html">Video Gallery</a></li>
+            <li><a href="regist.html">Registration</a></li>
+            <li><a href="s.html">About US</a></li>
+            <li><a href="k.html">Feedback</a></li>
+            
+        </ul>
+        <div class="icon"></div>
+    </nav>
+<script>
+    const icon = document.querySelector(".icon");  
+    const nav = document.querySelector("nav");  
+    icon.addEventListener("click", () => {icon.classList.toggle("close");  
+    nav.classList.toggle("show");  
+        }); 
+ </script>
+<form  action="connect1.php" method="post">  
+  <div class="container">  
+  <center>  <h1> MIMA Registeration Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label> 
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15"  />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15" />   
+<div> 
+<label>   
+Phone :  
+</label>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required> 
+<label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required> 
+      </div>
+ Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" name="address" required>  
+</textarea>       
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" placeholder="Male" value="M" name="gender" checked > Male   
+<input type="radio" placeholder="Female" value="F" name="gender"> Female   
+<input type="radio" placeholder="Others" value="O" name="gender"> Other  
+  
+</div>  
+<div>
+<label>   
+Course :  
+</label>   
+  
+<select>  
+<option value="Course" name="course">Course</option>  
+<option value="BCA" name="course">BCA</option>  
+<option value="Science" name="course">Science</option>  
+<option value="Commerce" name="course">Commerce</option>  
+<option value="Arts" name="course">Arts</option>  
+<option value="PG" name="course">PG</option>  
+</select>  
+</div>
+<div>
+<label>   
+Interested in :  
+</label>   
+  
+<select>  
+<option value="Acting" name="intrest">Acting</option>  
+<option value="Script-writing" name="intrest">Script-writing</option>  
+<option value="Narration" name="intrest">Narration</option>  
+<option value="Mimicry" name="intrest">Mimicry</option>  
+<option value="Free-style" name="intrest">Free-style</option>   
+</select>  
+</div>  
+    <button type="submit" class="registerbtn">Register</button>    
+      <button type="reset" class="reset">Reset</button> </div>
+</form>  
+</body>  
+</html>

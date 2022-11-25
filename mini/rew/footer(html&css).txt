@@ -1,0 +1,96 @@
+HTML footer:
+
+<footer class="footer">
+  <div class=""inner-footer>
+    <div class="social-links">
+      <u1>
+        <li class="social-items"><a href="#"><i class=""fab fa-facebook></i></a></li>
+        <li class="social-items"><a href="#"><i class=""fab fa-instagram></i></a></li>
+        <li class="social-items"><a href="#"><i class=""fab fa-whatsapp></a></i></li>
+        <li class="social-items"><a href="#"><i class=""fab fa-gmail></a></i></li>
+      </u1>
+    </div>
+   
+    <div class="quick-links">
+       <u1>
+          <li class="quick-items"><a href="#">Contact us</a></li>
+       </u1>    
+    </div>
+  </div>
+</footer>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Footer:
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links u1{
+    padding: 200px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #6cccc6;
+    transition: all .25s;
+}
+
+.social-items a:hover{
+    color: #5db3ad;
+}
+.quick-links{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+
+.quick-links u1{
+    display: flex;
+
+}
+
+.quick-items{
+    list-style:none;
+
+}
+ 
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    color: white;
+    transition: all .25s;
+}
+
+.quick-items a:hover{
+    color: #6cccc6;
+}
+

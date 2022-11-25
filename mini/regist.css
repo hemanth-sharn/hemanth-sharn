@@ -1,0 +1,231 @@
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:black;  
+}  
+.container {  
+    padding: 50px;  
+    background: linear-gradient(45deg,white 14.7%, black 97%);
+    animation: gradient 15s ease infinite; 
+}
+ @keyframes gradient {  
+       0% {  
+            background-position: 0% 50%;  
+      }  
+       50% {  
+            background-position: 100% 50%;  
+      }  
+       100% {  
+            background-position: 0% 50%;  
+      }  
+ } 
+  
+input[type=text], input[type=password],input[type=number], textarea,select {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color:whitesmoke;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.box1 {  
+  background-color: #4CAF50;
+  color: white;  
+  padding: 16px 50px;  
+  margin: 8px 45%;  
+  border: none;  
+  cursor: pointer;  
+  width: 7%;
+    border-radius: 10px 10px 10px 10px;
+  opacity: 0.9;  
+}  
+.box1:hover {  
+  opacity: 1;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}
+.reset {  
+  background-color: #4CAF50; 
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid orange;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+    pointer-events: 50%;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: orange;
+    pointer-events: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: deepskyblue;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+ul{
+    background-color: antiquewhite;
+    border-radius: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 9px 5px 0px #00000017;
+}
+li a{
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+li:hover a{
+    color: cornflowerblue;
+}
+nav{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: -80px;
+    width: 50px;
+    height: 35px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgb(255, 255, 255);
+    background-image:url(rew/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 0px #00000017;
+    transition: 0.5s ease transform;
+}
+.icon.close{
+    transform: translateY(-50%) rotate(360deg);
+    background-image: url(rew/cancel.png);
+}
+ul{
+    width: 0px;
+    overflow: hidden;
+    transform: translateX(100px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    padding: 20px;
+}
+nav.show ul{
+    width: 1000px;
+    transform: translate(0px);
+    opacity: 1;
+    pointer-events: all;
+}
+nav{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    li a{
+        padding: 5px 10px;
+    }
+    nav ul{
+        padding: 15px;
+    
+    }
+    nav.show ul{
+        width: 260px;
+    }
+    .icon{
+        width: 45px;
+        height: 45px;
+        right: -50px;
+    }
+    nav{
+        top: 10px;
+        right: 60px;
+    }
+}

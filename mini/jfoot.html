@@ -1,0 +1,93 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="jfoot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact us form</title>
+	  <link rel="stylesheet" href="Contact us.css">
+	  <script src="Contact us.js"></script>
+  </head>
+  <body>
+       <nav>
+        <ul>
+            <li><a href="mini.html">Home</a></li>
+            <li><a href="mini2.html">Achievements</a></li>
+            <li><a href="videogal.html">Video Gallery</a></li>
+            <li><a href="new.html">About US</a></li>
+            <li><a href="jfoot.html">Feedback</a></li>
+            <li><a href="http://localhost/testsite1/regist.html">Registration</a></li>
+            
+        </ul>
+        <div class="icon"></div>
+    </nav>
+<script>
+    const icon = document.querySelector(".icon");  
+    const nav = document.querySelector("nav");  
+    icon.addEventListener("click", () => {icon.classList.toggle("close");  
+    nav.classList.toggle("show");  
+        }); 
+ </script>
+    <section>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>ABOUT US</h2>
+          <div class="content">
+            <p>MIMA is a association in SJC,with a moto of "Where Everyone's Mind Goes Crazy",to know more about about MIMA visit our social media page given below.</p>
+            <div class="social">
+              <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+              <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <a href="https://www.google.com/maps/place/St.+Joseph's+College/@12.9623845,77.5964272,15z/data=!4m5!3m4!1s0x0:0xdec852132523ceae!8m2!3d12.9623845!4d77.5964272"><span class="fas fa-map-marker-alt"></span></a>
+                <span class="text">shantinagar,banglore</span>, Surkhet</div>
+            </div>
+            
+            <div class="email">
+              <a href="mima.sjc@gmail.com"><span class="fas fa-envelope"></span></a>
+              <span class="text">mima.sjc@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        
+    </footer>
+  </section>
+  
+
+
+  <section>
+    <div class="wrapper">
+      <h2>Contact us</h2>
+      <div id="error_message"></div>
+      <form id="myform"  action="send.php" method="post" onsubmit="return validate();">
+        <div class="input_field">
+            <input type="text" placeholder="Name" id="name" name="name">
+        </div>
+        
+        <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone" name="phone">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Email" id="email" name="email">
+        </div>
+        <div class="input_field">
+            <textarea placeholder="Message" id="message" name="msg"></textarea>
+        </div>
+        <div class="btn">
+            <input type="submit">
+        </div>
+      </form>
+    </div>
+
+  </section>
+  </body>
+</html>
